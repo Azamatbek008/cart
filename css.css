@@ -1,0 +1,106 @@
+body {
+    margin:0;
+    padding:0;
+  }
+  
+  header {
+    height:60px;
+    width:100%;
+    background:#6e98ad;
+    text-align:right;
+    padding-top:20px;
+  }
+  
+  .header-cart {
+    position:relative;
+      display:inline-block;
+    margin-right:40px;
+  }
+  
+  .header-cart img {
+          width: 40px;
+      }
+  
+  .header-cart span {
+    background-color: orangered;
+    color: #fff;
+    position: absolute;
+    width: 24px;
+    height: 20px;
+    top: -5px;
+    right: -15px;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 6px;
+    border-radius:100%;
+  }
+  
+  .article-holder {
+      margin: 100px auto;
+  }
+  
+  .article-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+  .article-img {
+          width: 100%;
+  }
+  
+  .add-article {
+    background-color: darkgreen;
+    padding: 12px 22px;
+    text-align: center;
+    color: #fff;
+    border:none;
+    cursor:pointer;
+    border-radius: 4px;
+  }
+  
+  .add-article:hover {
+    background-color: #039103;
+  }
+  
+  .animation-cart {
+      position: fixed;
+      animation-name: example;
+      animation-duration: 2.2s;
+      animation-fill-mode: forwards;
+      z-index: 99999;
+      transform(scale(0,0));
+  }
+  
+  @keyframes example {
+      0 {
+          transform: scale(0,0);
+      }
+  
+      60% {
+            transform: scale(1,1);
+  
+         }
+  
+      100% {
+            transform: scale(0,0);
+      }
+  }
+  
+  .column {
+    width:20%;
+    float:left;
+    margin: 10px 2.5%;
+  }
+  
+  .shake {
+      animation: shake 1s linear both 1s;
+  }
+  @keyframes shake {
+      0%  { transform: translateY(0dpx) }
+      25% { transform: translateY(-10px) }
+      50% { transform: translateY(2px) }
+      75% { transform: translate7(0px) }
+  }
